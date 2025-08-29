@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 
+
 @custom-variant dark (&:is(.dark *));
+
 
 @theme inline {
   --color-background: var(--background);
@@ -119,4 +122,9 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+
+body {
+  font-family: 'Poppins', sans-serif;
 }
