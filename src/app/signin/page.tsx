@@ -99,7 +99,11 @@ export default function LoginPage() {
           {/* Remember Me + Forgot Password */}
           <div className="flex items-center justify-between space-y-3">
             <div className="flex items-center gap-2">
-              <Checkbox id="remember" {...register("remember")} />
+              <Checkbox
+                id="remember"
+                {...register("remember")}
+                className="border-gray-400 data-[state=checked]:bg-blue-600 data-[state=checked]:border-blue-600"
+                />
               <Label htmlFor="remember">Remember Me</Label>
             </div>
             <a
